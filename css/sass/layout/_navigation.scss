@@ -2,7 +2,7 @@
 @use "../helpers/variables" as *;
 
 // Component Link
-@use "../components/link";
+@use "../helpers/placeholder";
 
 .navigation {
   background-color: $primary;

@@ -1,6 +1,24 @@
 // Sass Varaibles
 @use "../helpers/variables" as *;
 
+// Carousel
+@use "../components/carousel";
+
+// Placeholders
+@use "../helpers/placeholder";
+
+// Section Heading
+@use "../components/section-heading";
+
+// Service Card
+@use "../components/service-card";
+
+// Mixins
+@use "../helpers/mixins" as *;
+
+// Customer Card
+@use "../components/customer-card";
+
 .description {
   max-width: 425px;
   margin: 30px auto;
@@ -16,3 +34,17 @@
   }
 }
 
+// All Sections With Cards And Same Margin
+$sections: "service", "customer", "project";
+
+@each $section in $sections {
+  @include cards-sections-margin($section) {
+    @extend %section-margin-40;
+  }
+}
+
+.customer-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}

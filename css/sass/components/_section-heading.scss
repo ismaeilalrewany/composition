@@ -1,0 +1,34 @@
+// Sass Variables
+@use "../helpers/variables" as *;
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $secondary;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+
+  .heading-2 {
+    font: {
+      size: $heading-3-size;
+      weight: $headings-weight;
+    };
+    padding: 15px;
+    text-align: center;
+    color: $background;
+    display: inline-block;
+    background-color: $primary;
+    text-transform: $headings-transform;
+    border-radius: $border-radius;
+  }
+}

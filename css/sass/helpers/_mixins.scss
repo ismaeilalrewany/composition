@@ -14,3 +14,39 @@
   background-color: $color;
   border: none;
 }
+
+// Make Circles
+@mixin circle($dimenstion, $background) {
+  width: $dimenstion;
+  height: $dimenstion;
+  border-radius: 50%;
+  background-color: $background;
+}
+
+// Section Margin
+@mixin cards-sections-margin($section) {
+  .#{$section} {
+    @content;
+
+    .#{$section}-cards {
+      @content;
+    }
+  }
+}
+
+// Edit Icons
+@mixin svg-icon-edit($dimenstion, $background, $color) {
+  svg {
+    width: $dimenstion;
+    height: $dimenstion;
+    rect {
+      fill: $background;
+    }
+    circle {
+      stroke: $color;
+    }
+    path {
+      stroke: $color;
+    }
+  }
+}

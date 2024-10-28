@@ -1,0 +1,48 @@
+// Sass Variables
+@use "../helpers/variables" as *;
+
+// Mixins
+@use "../helpers/mixins" as *;
+
+// Placeholders
+@use "../helpers/placeholder";
+
+.service-card {
+  padding: 0 20px;
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    .svg-icon {
+      @include svg-icon-edit(60px, transparent, $text);
+      transform: translateX(-6px);
+    }
+
+    .heading-3 {
+      font: {
+        size: $heading-3-size;
+        weight: $headings-weight;
+      };
+      text-transform: $headings-transform;
+      color: $text;
+    }
+  }
+
+  .card-body {
+    .description {
+      margin: 14px 0 20px;
+      text-align: start;
+      font: {
+        size: $text-size;
+      }
+    }
+
+    .readmore {
+      @extend %a;
+      color: $accent;
+      font-size: $text-size;
+    }
+  }
+}

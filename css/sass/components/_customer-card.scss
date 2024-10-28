@@ -1,0 +1,51 @@
+// Sass Varaibles
+@use "../helpers/variables" as *;
+
+// Placeholders
+@use "../helpers/placeholder";
+
+.customer-card {
+  .card-header {
+    width: 262px;
+    height: 197px;
+    border-radius: $border-radius;
+    @extend %overlay;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .card-body {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .customer-name {
+      .title {
+        font: {
+          size: $title-size;
+          weight: $headings-weight;
+        };
+        margin-right: 5px;
+      }
+
+      .fullname {
+        font: {
+          size: $description-size;
+          style: $description-style;
+        };
+      }
+    }
+
+    .profile {
+      @extend %a;
+      font-size: $title-size;
+      color: $accent;
+    }
+  }
+}

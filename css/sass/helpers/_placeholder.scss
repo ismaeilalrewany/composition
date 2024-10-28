@@ -1,0 +1,39 @@
+// Sass Varaibles
+@use "./variables" as *;
+
+// Link Placeholder
+%a {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    color: inherit;
+  }
+  // &:visited {
+  //   color: inherit;
+  // }
+}
+
+// Section Margin Placeholder
+%section-margin-40 {
+  margin: 0 {
+    top: 40px;
+    bottom: 40px;
+  };
+}
+
+// Overlay
+%overlay {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($images, 0.2);
+    border-radius: $border-radius;
+    top: 0;
+    left: 0;
+  }
+}
