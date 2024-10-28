@@ -1,0 +1,18 @@
+// Reset elements
+@use "./sass/helpers/global-rules";
+
+// Body styles
+@use "./sass/layout/body-styles";
+
+// Container styles
+@use "./sass/layout/container";
+
+// Header styles
+@use "./sass/layout/header";
+
+// Navigation styles
+@use "./sass/layout/navigation";
+
+// Home page styles
+@use "./sass/pages/home";
+

@@ -1,0 +1,6 @@
+@use "../helpers/variables" as *;
+
+body {
+  background-color: $background;
+  font-family: $font-face;
+}

@@ -1,0 +1,18 @@
+// Sass Varaibles
+@use "../helpers/variables" as *;
+
+// Mixins
+@use "../helpers/mixins" as *;
+
+// Innerwidth is less than 576px
+.container {
+  margin: {
+    right: auto;
+    left: auto;
+  }
+  width: 100%;
+}
+
+@for $i from 1 through 3 {
+  @include container-width(nth($media-width, $i), nth($container-width, $i));
+}

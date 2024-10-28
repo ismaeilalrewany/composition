@@ -1,0 +1,12 @@
+%a {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    color: inherit;
+  }
+  // &:visited {
+  //   color: inherit;
+  // }
+}

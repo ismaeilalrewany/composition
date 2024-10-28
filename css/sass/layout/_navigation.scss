@@ -1,0 +1,36 @@
+// Sass Variables
+@use "../helpers/variables" as *;
+
+// Component Link
+@use "../components/link";
+
+.navigation {
+  background-color: $primary;
+  padding: 15px;
+  border-radius: $border-radius;
+
+  .nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+
+    a {
+      @extend %a;
+
+      font: {
+        size: 10px;
+        weight: $headings-weight;
+      };
+      text-transform: $headings-transform;
+      white-space: nowrap;
+      color: $text;
+
+      &.active {
+        color: $background;
+      }
+      &:hover {
+        color: $background;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+// Container Mixin
+@mixin container-width($media-width, $container-width) {
+  @media ($media-width) {
+    .container {
+      width: $container-width;
+    }
+  }
+}
+
+// Break-Line Mixin
+@mixin break-line($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+  border: none;
+}
