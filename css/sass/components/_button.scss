@@ -1,0 +1,18 @@
+// Sass Variables
+@use "../helpers/variables" as *;
+
+button {
+  padding: 10px;
+  border-radius: $border-radius;
+  border: 0;
+  background-color: $primary;
+  color: $background;
+  width: 100%;
+  cursor: pointer;
+  font: {
+    family: $font-face;
+    size: $nav-item-size;
+    weight: $headings-weight;
+  };
+  text-transform: $headings-transform;
+}

@@ -1,0 +1,17 @@
+// Sass Varaibles
+@use "../helpers/variables" as *;
+
+// Placeholders
+@use "../helpers/placeholder";
+
+.project-card {
+  width: 262px;
+  height: 262px;
+  @extend %overlay;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: $border-radius;
+  }
+}

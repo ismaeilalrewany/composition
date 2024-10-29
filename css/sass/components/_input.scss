@@ -1,0 +1,23 @@
+// Sass Varaibles
+@use "../helpers/variables" as *;
+
+.input {
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: $border-radius;
+    border: 0;
+    outline: 0;
+    color: $text;
+    background-color: $background;
+
+    &::placeholder {
+      font-family: $font-face;
+      color: $text;
+    }
+  }
+
+  textarea {
+    height: 100px;
+  }
+}

@@ -1,0 +1,45 @@
+// Sass Variables
+@use "../helpers/variables" as *;
+
+// Placeholders
+@use "../helpers/placeholder";
+
+.blog-card {
+  display: flex;
+  gap: 20px;
+
+  .picture {
+    width: 120px;
+    height: 120px;
+    @extend %overlay;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: $border-radius;
+    }
+  }
+
+  .blog-descriptoin {
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .title {
+      font: {
+        size: $nav-item-size;
+        weight: $headings-weight;
+      };
+      text-transform: $headings-transform;
+      color: $background;
+    }
+
+    .description {
+      margin: 0;
+      text-align: start;
+      font-size: $small-text-size;
+      color: $background;
+    }
+  }
+}

@@ -19,6 +19,9 @@
 // Customer Card
 @use "../components/customer-card";
 
+// Project Card
+@use "../components/project-card";
+
 .description {
   max-width: 425px;
   margin: 30px auto;
@@ -43,7 +46,7 @@ $sections: "service", "customer", "project";
   }
 }
 
-.customer-cards {
+.customer-cards, .project-cards {
   display: flex;
   gap: 20px;
   justify-content: center;

@@ -1,0 +1,97 @@
+// Sass Variables
+@use "../helpers/variables" as *;
+
+// Placeholders
+@use "../helpers/placeholder";
+
+// Blog Card
+@use "../components/blog-card";
+
+// Input Component
+@use "../components/input";
+
+// Button Component
+@use "../components/button";
+
+// Mixins
+@use "../helpers/mixins" as *;
+
+.footer {
+  background-color: $secondary;
+  
+  .footer-body {
+    @extend %footer-padding-40;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+
+    .heading-3 {
+      font: {
+        size: $heading-3-size;
+        weight: $headings-weight;
+        style: normal;
+      };
+      color: $text;
+      text-transform: $headings-transform;
+      margin-bottom: 30px;
+    }
+
+    .blog {
+      grid-column: 1 / span 2;
+
+      .blog-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+
+    .address {
+      min-width: 185px;
+
+      .details {
+        font-size: $small-text-size;
+        color: $background;
+
+        .company, .tel {
+          margin-bottom: 20px;
+        }
+
+        .email {
+          color: $accent;
+        }
+
+        .work-hours {
+          font: {
+            weight: $headings-weight;
+            style: normal;
+          };
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .contact-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .break-line {
+    @include break-line(100%, 1px, $background);
+  }
+
+  .copyright-body {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      color: $background;
+      font-size: 12px;
+    }
+  }
+}
