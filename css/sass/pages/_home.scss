@@ -1,25 +1,10 @@
-// Sass Varaibles
 @use "../helpers/variables" as *;
-
-// Carousel
 @use "../components/carousel";
-
-// Placeholders
 @use "../helpers/placeholder";
-
-// Section Heading
 @use "../components/section-heading";
-
-// Service Card
 @use "../components/service-card";
-
-// Mixins
 @use "../helpers/mixins" as *;
-
-// Customer Card
 @use "../components/customer-card";
-
-// Project Card
 @use "../components/project-card";
 
 .description {
@@ -47,7 +32,5 @@ $sections: "service", "customer", "project";
 }
 
 .customer-cards, .project-cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  @include flex-center-gap(row, true, 20px);
 }

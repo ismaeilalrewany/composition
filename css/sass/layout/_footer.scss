@@ -1,19 +1,8 @@
-// Sass Variables
 @use "../helpers/variables" as *;
-
-// Placeholders
 @use "../helpers/placeholder";
-
-// Blog Card
 @use "../components/blog-card";
-
-// Input Component
 @use "../components/input";
-
-// Button Component
 @use "../components/button";
-
-// Mixins
 @use "../helpers/mixins" as *;
 
 .footer {
@@ -42,9 +31,7 @@
       grid-column: 1 / span 2;
 
       .blog-cards {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+        @include flex-center-gap(column, false, 40px);
       }
     }
 
@@ -74,9 +61,7 @@
     }
 
     .contact-layout {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+      @include flex-center-gap(column, false, 20px);
     }
   }
 

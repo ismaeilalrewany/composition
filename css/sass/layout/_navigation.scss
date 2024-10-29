@@ -1,8 +1,6 @@
-// Sass Variables
 @use "../helpers/variables" as *;
-
-// Component Link
 @use "../helpers/placeholder";
+@use "../helpers/mixins" as *;
 
 .navigation {
   background-color: $primary;
@@ -11,8 +9,7 @@
 
   .nav-menu {
     list-style-type: none;
-    display: flex;
-    gap: 15px;
+    @include flex-center-gap(row, false, 15px);
 
     a {
       @extend %a;

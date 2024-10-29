@@ -1,9 +1,8 @@
-// Sass Variables
 @use "../helpers/variables" as *;
+@use "../helpers/mixins" as *;
 
 .section-heading {
-  display: flex;
-  justify-content: center;
+  @include flex-center-gap(row, true, 0);
   position: relative;
   &::before {
     content: "";

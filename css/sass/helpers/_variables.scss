@@ -26,10 +26,10 @@ $text-weight: normal;
 $headings-transform: uppercase;
 
 // Media Queries
-$media-width: "min-width: 576px", "min-width: 1024px", "min-width: 1920px";
+$media-width: "min-width: 576px", "min-width: 768px", "min-width: 992px", "min-width: 1200px", "min-width: 1400px";
 
 // Container Width
-$container-width: 544px, 784px, 1200px;
+$container-width: 540px, 720px, 960px, 1140px, 1320px;
 
 // Border Radius
 $border-radius: 5px;

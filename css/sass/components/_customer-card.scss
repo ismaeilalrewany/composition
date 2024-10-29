@@ -1,8 +1,6 @@
-// Sass Varaibles
 @use "../helpers/variables" as *;
-
-// Placeholders
 @use "../helpers/placeholder";
+@use "../helpers/mixins" as *;
 
 .customer-card {
   .card-header {
@@ -12,8 +10,7 @@
     @extend %overlay;
 
     img {
-      width: 100%;
-      height: 100%;
+      @extend %width-height-100;
       object-fit: cover;
       object-position: top;
     }
@@ -21,9 +18,7 @@
 
   .card-body {
     margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    @include flex-center-gap(column, false, 10px);
 
     .customer-name {
       .title {

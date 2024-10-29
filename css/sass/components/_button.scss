@@ -1,13 +1,12 @@
-// Sass Variables
 @use "../helpers/variables" as *;
 
 button {
-  padding: 10px;
-  border-radius: $border-radius;
   border: 0;
-  background-color: $primary;
-  color: $background;
   width: 100%;
+  padding: 10px;
+  color: $background;
+  background-color: $primary;
+  border-radius: $border-radius;
   cursor: pointer;
   font: {
     family: $font-face;

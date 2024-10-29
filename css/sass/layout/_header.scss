@@ -1,14 +1,8 @@
-// Sass Varialbes
 @use "../helpers/variables" as *;
-
-// Mixins
 @use "../helpers/mixins" as *;
 
 .header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
+  @include flex-center-gap(column, true, 20px);
   padding: {
     top: 30px;
     bottom: 30px;

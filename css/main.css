@@ -18,30 +18,40 @@ body {
 
 @media (min-width: 576px) {
   .container {
-    width: 544px;
+    width: 540px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .container {
-    width: 784px;
+    width: 720px;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 992px) {
   .container {
-    width: 1200px;
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
   }
 }
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -73,6 +83,11 @@ body {
   margin-bottom: 40px;
 }
 
+.blog-card .picture img, .project-card img, .customer-card .card-header img, .carousel .carousel-inner source, .carousel .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
 .blog-card .picture, .project-card, .customer-card .card-header, .carousel .carousel-inner {
   position: relative;
 }
@@ -101,6 +116,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 15px;
 }
 .navigation .nav-menu a {
@@ -125,22 +144,25 @@ body {
   display: inline-block;
 }
 .carousel .carousel-inner source {
-  width: 100%;
   border-radius: 5px;
 }
 .carousel .carousel-inner img {
-  width: 100%;
   border-radius: 5px;
 }
 .carousel .carousel-control {
   margin-top: 10px;
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style-type: none;
+  gap: 10px;
 }
 .carousel .carousel-control .button {
   width: 10px;
@@ -159,9 +181,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 0;
   position: relative;
 }
 .section-heading::before {
@@ -240,8 +267,6 @@ body {
   border-radius: 5px;
 }
 .customer-card .card-header img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -277,8 +302,6 @@ body {
   height: 262px;
 }
 .project-card img {
-  width: 100%;
-  height: 100%;
   border-radius: 5px;
 }
 
@@ -298,16 +321,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 20px;
 }
 
 .blog-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   gap: 20px;
 }
 .blog-card .picture {
@@ -315,8 +346,6 @@ body {
   height: 120px;
 }
 .blog-card .picture img {
-  width: 100%;
-  height: 100%;
   border-radius: 5px;
 }
 .blog-card .blog-descriptoin {
@@ -347,43 +376,43 @@ body {
 .input input, .input textarea {
   width: 100%;
   padding: 10px;
-  border-radius: 5px;
   border: 0;
   outline: 0;
   color: #052929;
+  border-radius: 5px;
   background-color: #DFFAFB;
 }
 .input input::-webkit-input-placeholder, .input textarea::-webkit-input-placeholder {
-  font-family: "Times New Roman", serif;
   color: #052929;
+  font-family: "Times New Roman", serif;
 }
 .input input::-moz-placeholder, .input textarea::-moz-placeholder {
-  font-family: "Times New Roman", serif;
   color: #052929;
+  font-family: "Times New Roman", serif;
 }
 .input input:-ms-input-placeholder, .input textarea:-ms-input-placeholder {
-  font-family: "Times New Roman", serif;
   color: #052929;
+  font-family: "Times New Roman", serif;
 }
 .input input::-ms-input-placeholder, .input textarea::-ms-input-placeholder {
-  font-family: "Times New Roman", serif;
   color: #052929;
+  font-family: "Times New Roman", serif;
 }
 .input input::placeholder, .input textarea::placeholder {
-  font-family: "Times New Roman", serif;
   color: #052929;
+  font-family: "Times New Roman", serif;
 }
 .input textarea {
   height: 100px;
 }
 
 button {
-  padding: 10px;
-  border-radius: 5px;
   border: 0;
-  background-color: #617DEA;
-  color: #DFFAFB;
   width: 100%;
+  padding: 10px;
+  color: #DFFAFB;
+  background-color: #617DEA;
+  border-radius: 5px;
   cursor: pointer;
   font-family: "Times New Roman", serif;
   font-size: 14px;

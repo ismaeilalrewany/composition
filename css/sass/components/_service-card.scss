@@ -1,10 +1,5 @@
-// Sass Variables
 @use "../helpers/variables" as *;
-
-// Mixins
 @use "../helpers/mixins" as *;
-
-// Placeholders
 @use "../helpers/placeholder";
 
 .service-card {

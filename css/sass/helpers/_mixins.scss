@@ -50,3 +50,14 @@
     }
   }
 }
+
+// Flex Direction, Center, and Gap
+@mixin flex-center-gap($direction, $center, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  @if $center {
+    justify-content: if($direction == column, null, center);
+    align-items: if($direction == column, center, null);
+  }
+  gap: $gap;
+}
