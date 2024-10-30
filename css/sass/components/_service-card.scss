@@ -41,3 +41,10 @@
     }
   }
 }
+
+@media (nth($media-width, 2)) {
+  .service-card {
+    margin: 0 auto;
+    padding: 0;
+  }
+}

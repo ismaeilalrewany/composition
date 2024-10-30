@@ -31,3 +31,11 @@
     }
   }
 }
+
+@media (nth($media-width, 1)) {
+  .nav-menu .menu-link {
+    a {
+      font-size: $nav-item-size;
+    }
+  }
+}

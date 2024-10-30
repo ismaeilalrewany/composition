@@ -31,6 +31,26 @@ $sections: "service", "customer", "project";
   }
 }
 
+.service-cards {
+  @include flex-center-gap(column, false, 20px);
+}
+
 .customer-cards, .project-cards {
   @include flex-center-gap(row, true, 20px);
+}
+
+@media (nth($media-width, 1)) {
+  .description {
+    max-width: 525px;
+  }
+
+  .customer-cards, .project-cards {
+    justify-content: start;
+  }
+}
+
+@media (nth($media-width, 2)) {
+  .service-cards {
+    @include flex-center-gap(row, true, 20px);
+  }
 }

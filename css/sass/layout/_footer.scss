@@ -76,7 +76,22 @@
 
     p {
       color: $background;
-      font-size: 12px;
+      font-size: $copyright-size;
+    }
+  }
+}
+
+@media (nth($media-width, 1)) {
+  .footer {
+    .footer-body {
+      padding: {
+        left: 0;
+        right: 0;
+      };
+
+      .address {
+        min-width: 220px;
+      }
     }
   }
 }

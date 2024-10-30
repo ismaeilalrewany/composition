@@ -37,3 +37,9 @@
     }
   }
 }
+
+@media (nth($media-width, 1)) {
+  .carousel {
+    padding: 0;
+  }
+}

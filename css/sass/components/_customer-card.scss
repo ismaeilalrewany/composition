@@ -3,9 +3,11 @@
 @use "../helpers/mixins" as *;
 
 .customer-card {
+  margin: 0 auto;
+
   .card-header {
-    width: 262px;
-    height: 197px;
+    width: 260px;
+    height: 200px;
     border-radius: $border-radius;
     @extend %overlay;
 

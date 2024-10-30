@@ -2,8 +2,9 @@
 @use "../helpers/placeholder";
 
 .project-card {
-  width: 262px;
-  height: 262px;
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
   @extend %overlay;
 
   img {
