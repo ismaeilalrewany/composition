@@ -43,3 +43,13 @@
     padding: 0;
   }
 }
+
+@media (nth($media-width, 2)) {
+  .carousel {
+    .carousel-inner {
+      height: 390px;
+      width: 100%;
+      background-size: cover;
+    }
+  }
+}

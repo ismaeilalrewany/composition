@@ -50,7 +50,8 @@ $sections: "service", "customer", "project";
 }
 
 @media (nth($media-width, 2)) {
-  .service-cards {
+  .service-cards, .customer-cards, .project-cards {
     @include flex-center-gap(row, true, 20px);
+    flex-wrap: wrap;
   }
 }

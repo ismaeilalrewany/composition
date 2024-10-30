@@ -185,6 +185,13 @@ body {
     padding: 0;
   }
 }
+@media (min-width: 768px) {
+  .carousel .carousel-inner {
+    height: 390px;
+    width: 100%;
+    background-size: cover;
+  }
+}
 .section-heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,7 +378,7 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .service-cards {
+  .service-cards, .customer-cards, .project-cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -383,6 +390,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .blog-card {
@@ -583,6 +592,19 @@ button {
   }
   .footer .footer-body .address {
     min-width: 220px;
+  }
+}
+@media (min-width: 768px) {
+  .footer .footer-body {
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+  }
+  .footer .footer-body .blog {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer .footer-body .contact-layout {
+    max-width: 350px;
   }
 }
 /*# sourceMappingURL=main.css.map */

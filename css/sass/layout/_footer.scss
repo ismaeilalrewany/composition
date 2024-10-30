@@ -95,3 +95,19 @@
     }
   }
 }
+
+@media (nth($media-width, 2)) {
+  .footer {
+    .footer-body {
+      grid-template-columns: 2fr 1fr;
+
+      .blog {
+        grid-column: 1;
+      }
+
+      .contact-layout {
+        max-width: 350px;
+      }
+    }
+  }
+}
