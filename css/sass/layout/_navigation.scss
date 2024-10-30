@@ -32,7 +32,7 @@
   }
 }
 
-@media (nth($media-width, 1)) {
+@include media("small") {
   .nav-menu .menu-link {
     a {
       font-size: $nav-item-size;

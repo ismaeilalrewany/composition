@@ -1,4 +1,5 @@
 @use "../helpers/variables" as *;
+@use "../helpers/mixins" as *;
 
 button {
   border: 0;
@@ -14,4 +15,11 @@ button {
     weight: $headings-weight;
   };
   text-transform: $headings-transform;
+}
+
+@include media("large") {
+  button {
+    width: auto;
+    padding: 10px 40px;
+  }
 }

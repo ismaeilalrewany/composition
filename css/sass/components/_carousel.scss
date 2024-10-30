@@ -38,18 +38,24 @@
   }
 }
 
-@media (nth($media-width, 1)) {
+@include media("small") {
   .carousel {
     padding: 0;
   }
 }
 
-@media (nth($media-width, 2)) {
+@include media("medium") {
   .carousel {
     .carousel-inner {
-      height: 390px;
-      width: 100%;
-      background-size: cover;
+      @include carousel-inner-height(390px);
+    }
+  }
+}
+
+@include media("large") {
+  .carousel {
+    .carousel-inner {
+      @include carousel-inner-height(490px);
     }
   }
 }

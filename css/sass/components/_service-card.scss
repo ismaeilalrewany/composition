@@ -26,9 +26,10 @@
   }
 
   .card-body {
-    .description {
+    .card-description {
       margin: 14px 0 20px;
       text-align: start;
+      max-width: 420px;
       font: {
         size: $text-size;
       }
@@ -42,9 +43,19 @@
   }
 }
 
-@media (nth($media-width, 2)) {
+@include media("medium") {
   .service-card {
     margin: 0 auto;
     padding: 0;
+  }
+}
+
+@include media("large") {
+  .service-card {
+    .card-body {
+      .card-description {
+        max-width: calc(920px/3);
+      }
+    }
   }
 }

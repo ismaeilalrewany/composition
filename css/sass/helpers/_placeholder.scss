@@ -1,5 +1,8 @@
 @use "./variables" as *;
 
+// NOTE::
+// Placeholder Doesn't Work In Media Queries
+
 // Link Placeholder
 %a {
   text-decoration: none;
@@ -11,11 +14,19 @@
   }
 }
 
-// Section Margin Placeholder
+// Section Margin 40
 %section-margin-40 {
   margin: 0 {
     top: 40px;
     bottom: 40px;
+  };
+}
+
+// Section Margin 60
+%section-margin-60 {
+  margin: 0 {
+    top: 60px;
+    bottom: 60px;
   };
 }
 
@@ -39,7 +50,12 @@
   }
 }
 
-// Footer Padding
+// Footer Padding 40
 %footer-padding-40 {
   padding: 40px 10px;
+}
+
+// Footer Padding 60
+%footer-padding-60 {
+  padding: 60px 0;
 }

@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 // Container Mixin
 @mixin container-width($media-width, $container-width) {
   @media ($media-width) {
@@ -60,4 +62,24 @@
     align-items: if($direction == column, center, null);
   }
   gap: $gap;
+}
+
+// Carousel Inner height
+@mixin carousel-inner-height($height) {
+  height: $height;
+  width: 100%;
+  background-size: cover;
+}
+
+// Media Queries Mixin
+@mixin media($index) {
+  $media: (1: "small", 2: "medium", 3: "large", 4: "x-large", 5: "xx-large");
+
+  @each $i, $name in $media {
+    @if $index == $name {
+      @media (nth($media-width, $i)) {
+        @content;
+      }
+    }
+  }
 }

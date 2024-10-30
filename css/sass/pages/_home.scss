@@ -39,7 +39,8 @@ $sections: "service", "customer", "project";
   @include flex-center-gap(row, true, 20px);
 }
 
-@media (nth($media-width, 1)) {
+// Media Queries
+@include media("small") {
   .description {
     max-width: 525px;
   }
@@ -49,9 +50,17 @@ $sections: "service", "customer", "project";
   }
 }
 
-@media (nth($media-width, 2)) {
+@include media("medium") {
   .service-cards, .customer-cards, .project-cards {
     @include flex-center-gap(row, true, 20px);
     flex-wrap: wrap;
+  }
+}
+
+@include media("large") {
+  @each $section in $sections {
+    @include cards-sections-margin($section) {
+      margin: 60px 0;
+    }
   }
 }

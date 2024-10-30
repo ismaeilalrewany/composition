@@ -1,5 +1,6 @@
 @use "../helpers/variables" as *;
 @use "../helpers/placeholder";
+@use "../helpers/mixins" as *;
 
 .project-card {
   width: 260px;
@@ -10,5 +11,12 @@
   img {
     @extend %width-height-100;
     border-radius: $border-radius;
+  }
+}
+
+@include media("large") {
+  .project-card {
+    width: calc(920px/3);
+    height: calc(920px/3);
   }
 }

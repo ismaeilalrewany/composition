@@ -46,3 +46,12 @@
     }
   }
 }
+
+@include media("large") {
+  .customer-card {
+    .card-header {
+      width: calc(900px/4);
+      height: 180px;
+    }
+  }
+}
