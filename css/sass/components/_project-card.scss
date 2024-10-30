@@ -20,3 +20,17 @@
     height: calc(920px/3);
   }
 }
+
+@include media("x-large") {
+  .project-card {
+    width: calc(1100px/3);
+    height: calc(1100px/3);
+  }
+}
+
+@include media("xx-large") {
+  .project-card {
+    width: calc(1280px/3);
+    height: calc(1280px/3);
+  }
+}

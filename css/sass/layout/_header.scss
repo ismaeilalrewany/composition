@@ -16,3 +16,10 @@
 .break-line {
   @include break-line(100%, 1px, $secondary);
 }
+
+@include media("x-large") {
+  .header {
+    @include flex-center-gap(row, false, 0);
+    justify-content: space-between;
+  }
+}

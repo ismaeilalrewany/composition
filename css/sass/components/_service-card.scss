@@ -59,3 +59,23 @@
     }
   }
 }
+
+@include media("x-large") {
+  .service-card {
+    .card-body {
+      .card-description {
+        max-width: calc(1100px/3);
+      }
+    }
+  }
+}
+
+@include media("xx-large") {
+  .service-card {
+    .card-body {
+      .card-description {
+        max-width: calc(1280px/3);
+      }
+    }
+  }
+}

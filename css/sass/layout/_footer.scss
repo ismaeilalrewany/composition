@@ -129,3 +129,31 @@
     }
   }
 }
+
+@include media("x-large") {
+  .footer {
+    .footer-body {
+      .address {
+        .details {
+          font-size: $text-size;
+        }
+      }
+    }
+
+    .copyright-body {
+      p {
+        font-size: $copyright-size + 2;
+      }
+    }
+  }
+}
+
+@include media("xx-large") {
+  .footer {
+    .copyright-body {
+      p {
+        font-size: $text-size;
+      }
+    }
+  }
+}

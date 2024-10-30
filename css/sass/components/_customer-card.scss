@@ -39,6 +39,11 @@
       }
     }
 
+    .customer-opinion {
+      display: none;
+      width: 260px;
+    }
+
     .profile {
       @extend %a;
       font-size: $title-size;
@@ -52,6 +57,43 @@
     .card-header {
       width: calc(900px/4);
       height: 180px;
+    }
+
+    .card-body {
+      .customer-opinion {
+        width: calc(900px/4);
+      }
+    }
+  }
+}
+
+@include media("x-large") {
+  .customer-card {
+    .card-header {
+      width: calc(1060px/4);
+      height: calc(1060px/4);
+    }
+
+    .card-body {
+      .customer-opinion {
+        display: block;
+        width: calc(1060px/4);
+      }
+    }
+  }
+}
+
+@include media("xx-large") {
+  .customer-card {
+    .card-header {
+      width: calc(1260px/4);
+      height: calc(1260px/4);
+    }
+
+    .card-body {
+      .customer-opinion {
+        width: calc(1260px/4);
+      }
     }
   }
 }
