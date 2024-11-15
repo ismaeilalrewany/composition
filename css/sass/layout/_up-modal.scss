@@ -1,0 +1,23 @@
+@use "../helpers/variables" as *;
+
+.modal {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  
+  .up {
+    padding: 10px;
+    background-color: $primary;
+    box-shadow: 2px 2px 4px 0 $secondary;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      display: block;
+      border-top: 1px solid $images;
+      border-right: 1px solid $images;
+      transform: translateY(5px) rotate(-45deg);
+    }
+  }
+}

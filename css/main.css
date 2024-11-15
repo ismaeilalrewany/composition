@@ -8,6 +8,7 @@
 body {
   background-color: #DFFAFB;
   font-family: "Times New Roman", serif;
+  position: relative;
 }
 
 .container {
@@ -777,5 +778,26 @@ button {
   .footer .copyright-body p {
     font-size: 16px;
   }
+}
+.modal {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.modal .up {
+  padding: 10px;
+  background-color: #617DEA;
+  -webkit-box-shadow: 2px 2px 4px 0 #107F78;
+          box-shadow: 2px 2px 4px 0 #107F78;
+}
+.modal .up::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-top: 1px solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  -webkit-transform: translateY(5px) rotate(-45deg);
+          transform: translateY(5px) rotate(-45deg);
 }
 /*# sourceMappingURL=main.css.map */
