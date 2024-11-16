@@ -404,6 +404,9 @@ body {
   height: 260px;
   margin: 0 auto;
 }
+.project-card::after {
+  pointer-events: none;
+}
 .project-card img {
   border-radius: 5px;
 }

@@ -7,6 +7,9 @@
   height: 260px;
   margin: 0 auto;
   @extend %overlay;
+  &::after {
+    pointer-events: none;
+  }
 
   img {
     @extend %width-height-100;
