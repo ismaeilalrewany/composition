@@ -30,6 +30,7 @@
 
     .button {
       @include circle(10px, $text);
+      cursor: pointer;
 
       &.active {
         @include circle(10px, $accent);

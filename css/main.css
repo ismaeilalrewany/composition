@@ -188,6 +188,7 @@ body {
   height: 10px;
   border-radius: 50%;
   background-color: #052929;
+  cursor: pointer;
 }
 .carousel .carousel-control .button.active {
   width: 10px;
@@ -786,6 +787,10 @@ button {
   position: fixed;
   bottom: 50px;
   right: 50px;
+  display: none;
+}
+.modal.show {
+  display: block;
 }
 .modal .up {
   padding: 10px;
