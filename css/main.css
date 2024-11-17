@@ -122,7 +122,7 @@ body {
 
 .navigation {
   background-color: #617DEA;
-  padding: 15px;
+  padding: 15px 10px;
   border-radius: 5px;
 }
 .navigation .nav-menu {
@@ -151,7 +151,10 @@ body {
 }
 
 @media (min-width: 576px) {
-  .nav-menu .menu-link a {
+  .navigation {
+    padding: 15px;
+  }
+  .navigation .nav-menu .menu-link a {
     font-size: 14px;
   }
 }
@@ -312,6 +315,7 @@ body {
   .service-card {
     margin: 0 auto;
     padding: 0;
+    width: 350px;
   }
 }
 @media (min-width: 992px) {
@@ -333,7 +337,7 @@ body {
   margin: 0 auto;
 }
 .customer-card .card-header {
-  width: 260px;
+  width: 230px;
   height: 200px;
   border-radius: 5px;
 }
@@ -372,6 +376,16 @@ body {
   color: #2B18B9;
 }
 
+@media (min-width: 576px) {
+  .customer-card .card-header {
+    width: 260px;
+  }
+}
+@media (min-width: 768px) {
+  .customer-card .card-header {
+    width: 165px;
+  }
+}
 @media (min-width: 992px) {
   .customer-card .card-header {
     width: 225px;
@@ -401,8 +415,8 @@ body {
   }
 }
 .project-card {
-  width: 260px;
-  height: 260px;
+  width: 230px;
+  height: 230px;
   margin: 0 auto;
 }
 .project-card::after {
@@ -412,6 +426,18 @@ body {
   border-radius: 5px;
 }
 
+@media (min-width: 576px) {
+  .project-card {
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (min-width: 768px) {
+  .project-card {
+    width: 226.6666666667px;
+    height: 226.6666666667px;
+  }
+}
 @media (min-width: 992px) {
   .project-card {
     width: 306.6666666667px;
@@ -451,6 +477,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .customer-cards, .project-cards {
@@ -461,10 +489,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (min-width: 576px) {
@@ -490,8 +517,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 20px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 @media (min-width: 992px) {
@@ -592,6 +617,9 @@ body {
 }
 .input textarea {
   height: 100px;
+}
+.input.hide {
+  display: none;
 }
 
 @media (min-width: 1200px) {

@@ -4,7 +4,7 @@
 
 .navigation {
   background-color: $primary;
-  padding: 15px;
+  padding: 15px 10px;
   border-radius: $border-radius;
 
   .nav-menu {
@@ -33,9 +33,13 @@
 }
 
 @include media("small") {
-  .nav-menu .menu-link {
-    a {
-      font-size: $nav-item-size;
+  .navigation {
+    padding: 15px;
+
+    .nav-menu .menu-link {
+      a {
+        font-size: $nav-item-size;
+      }
     }
   }
 }

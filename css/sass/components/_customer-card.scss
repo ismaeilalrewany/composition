@@ -6,7 +6,7 @@
   margin: 0 auto;
 
   .card-header {
-    width: 260px;
+    width: 230px;
     height: 200px;
     border-radius: $border-radius;
     @extend %overlay;
@@ -48,6 +48,22 @@
       @extend %a;
       font-size: $title-size;
       color: $accent;
+    }
+  }
+}
+
+@include media("small") {
+  .customer-card {
+    .card-header {
+      width: 260px;
+    }
+  }
+}
+
+@include media("medium") {
+  .customer-card {
+    .card-header {
+      width: calc((720px - 60px) / 4);
     }
   }
 }

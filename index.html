@@ -116,17 +116,20 @@
           <!-- Address Section -->
 
           <!-- Contact Form -->
-          <form action="" method="get" class="contact">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact">
             <h3 class="heading-3">Contact Us</h3>
             <div class="contact-layout">
-              <div class="input">
-                <input type="text" name="name" id="name" placeholder="Name">
+              <div class="input hide">
+                <input type="hidden" name="access_key" value="d729d16e-3508-4e2d-a2a9-fd995e50b23a">
               </div>
               <div class="input">
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="name" id="name" placeholder="Name" required>
               </div>
               <div class="input">
-                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+              </div>
+              <div class="input">
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
               </div>
               <div class="submit">
                 <button type="submit">Submit</button>

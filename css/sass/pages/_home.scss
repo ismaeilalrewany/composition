@@ -33,10 +33,12 @@ $sections: "service", "customer", "project";
 
 .service-cards {
   @include flex-center-gap(column, false, 20px);
+  flex-wrap: wrap;
 }
 
 .customer-cards, .project-cards {
-  @include flex-center-gap(row, true, 20px);
+  @include flex-center-gap(row, false, 20px);
+  flex-wrap: wrap;
 }
 
 // Media Queries
@@ -53,7 +55,6 @@ $sections: "service", "customer", "project";
 @include media("medium") {
   .service-cards, .customer-cards, .project-cards {
     @include flex-center-gap(row, true, 20px);
-    flex-wrap: wrap;
   }
 }
 

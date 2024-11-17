@@ -3,8 +3,8 @@
 @use "../helpers/mixins" as *;
 
 .project-card {
-  width: 260px;
-  height: 260px;
+  width: 230px;
+  height: 230px;
   margin: 0 auto;
   @extend %overlay;
   &::after {
@@ -14,6 +14,20 @@
   img {
     @extend %width-height-100;
     border-radius: $border-radius;
+  }
+}
+
+@include media("small") {
+  .project-card {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@include media("medium") {
+  .project-card {
+    width: calc((720px - 40px) / 3);
+    height: calc((720px - 40px) / 3);
   }
 }
 

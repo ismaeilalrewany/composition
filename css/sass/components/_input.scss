@@ -20,6 +20,10 @@
   textarea {
     height: 100px;
   }
+
+  &.hide {
+    display: none;
+  }
 }
 
 @include media("x-large") {
