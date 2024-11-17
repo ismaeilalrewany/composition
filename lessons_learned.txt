@@ -1,0 +1,17 @@
+NEW:_
+
+Scss project for the first time and organize my JavaScript code into files
+
+Use margin auto to center single element but if there are multiple elements will go to flex rules.
+This works because in a flex container, auto margins absorb any extra space in the direction they're applied. It's a really clean way to achieve positioning without needing additional wrapper elements or JavaScript!
+
+Never ever try position sticky inside flex box or container because these gives specific height to the element so the position sticky can't go out this height especially if this height is auto it will never more a bit but if the position is fixed it will be ok because fixed is float, conclusion is position sticky mustn't be specified in containers or flex boxes.
+
+
+To import and export files in js client side I need to add type="module" to script tag.
+
+Can't import json files inside client side js files because I will receive it as MIMI file not module so I will change the extention to js and inside it will put the json code but will use export or module.exports, there is another solution I didn't encounter it which is mjs module javascript files I don't know the syntax and I don't know much.
+
+Used third party API which is Web3Forms web3forms.com
+
+Better Documentation (markdownguide.org) and (claude.ai)
