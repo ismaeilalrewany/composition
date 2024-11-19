@@ -16,7 +16,7 @@ A semi **dynamic responsive** website built with **modern web** technologies.
   - [🤝 Contributing](#-contributing)
   - [⚖️ License](#️-license)
   - [🔄 Development Status](#-development-status)
-    - [V0.4.0](#v040)
+    - [V0.4.2](#v042)
 
 ## 🎯 Overview
 ***Composition*** is a **responsive** website that showcases **dynamic** content. The project emphasizes **modern** design principles and smooth user interactions. You can communicate with me by sending a message through the **contact** form.
@@ -144,15 +144,10 @@ This project is currently unlicensed. *[It will be licensed in the next versions
 
 ## 🔄 Development Status
 
-### V0.4.0
+### V0.4.2
 
-- Change *JavaScript* code to *TypeScript*.
-- Use ***React***, ***TypeScript***, and ***Sass*** in Frontend.
 - New website / brand *Logo*.
-- Changing the content to new content related to site activity.
-- Work on backend using (Deno.js / Node.js).
-- Possibility of creating an *account*.
-- New UI
-  > Will be designed from scratch on **Figma**.
-  > 
-  > Implement new design by code.
+- New UI will be designed from scratch.
+- Work on backend using (**Deno**.js / Node.js).
+- Use ***Fresh***, ***TypeScript***, and ***Tailwind-css***.
+- Changing the content to content related to site activity.
